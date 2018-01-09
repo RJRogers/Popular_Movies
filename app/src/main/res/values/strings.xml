@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="action_refresh">Most Popular</string>
+
+    <string name="action_highest_rated">Highest Rated</string>
+    <string name="favorite">Favorites</string>
+
+
+    <string name="title">Popular Movies</string>
+
+
+
+</resources>

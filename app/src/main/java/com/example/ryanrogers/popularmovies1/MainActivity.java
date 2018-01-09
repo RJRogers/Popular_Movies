@@ -1,0 +1,55 @@
+package com.example.ryanrogers.popularmovies1;
+
+//Code may contain references from Udacity Android Nanodegree
+// tutorial exercises see https://classroom.udacity.com/nanodegrees/nd801
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+
+
+
+public class MainActivity extends AppCompatActivity {
+
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        if(savedInstanceState == null){
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, new MovieFragment())
+                    .commit();
+        }
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+}
